@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
-import { Contenedor } from 'src/app/models';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Contenedor } from 'src/app/models';
+import { DataService } from 'src/app/services/data.service';
 
 
 
@@ -26,7 +26,7 @@ export class TableComponent implements OnInit {
     this.dataService.getData().subscribe((result:any)=>
     {
       this.dataDetails =  result;
-      debugger;
+
     });
   }
 

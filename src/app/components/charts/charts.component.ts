@@ -60,7 +60,6 @@ export class ChartsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    debugger
     this.getData();
   }
 
