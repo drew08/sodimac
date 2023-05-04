@@ -1,3 +1,11 @@
+
+
+# librerias o recursos externos:
+
+npm i bootstrap jquery @popperjs/core
+
+npm i --save angular-highcharts highcharts
+
 # Sodimac
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
