@@ -10,10 +10,8 @@ import { Contenedores } from 'src/app/data';
 export class DataService {
 
   mydata = Contenedores
-  
-  constructor(private http: HttpClient) { }
 
-  public searchItemList : any =[]
+  constructor(private http: HttpClient) { }
 
   getData(){
    return of(this.mydata)

@@ -60,6 +60,7 @@ export class ChartsComponent implements OnInit {
 
 
   ngOnInit(): void {
+
     this.getData();
   }
 
