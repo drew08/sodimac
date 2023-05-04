@@ -1,14 +1,17 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { NgModule } from '@angular/core';
+import { ChartsComponent } from 'src/app/components';
+import { TableComponent } from 'src/app/components';
 import { HomeRoutingModule } from './home-routing.module';
-import { TableComponent } from 'src/app/components/table';
-import { ChartsComponent } from 'src/app/components/charts/charts.component';
+import { HomeComponent } from './home.component';
+
+import { BrowserModule } from '@angular/platform-browser';
+
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,

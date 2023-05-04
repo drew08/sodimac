@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import { Contenedor } from 'src/app/models';
-import { Contenedores } from 'src/app/data';
+import { CommonModule } from '@angular/common';
+
+
+
 
 @Component({
   selector: 'app-table',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss']
 })
@@ -18,11 +22,13 @@ export class TableComponent implements OnInit {
   }
 
   getData(){
+
     this.dataService.getData().subscribe((result:any)=>
     {
       this.dataDetails =  result;
-
+      debugger;
     });
   }
+
 
 }
